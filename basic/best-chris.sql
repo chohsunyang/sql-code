@@ -35,7 +35,7 @@ VALUES
   
   
 SELECT name as sales_name,
-		   sum(amount_usd) as ttl_sales
+       sum(amount_usd) as ttl_sales
 FROM best_chris.sales s
 JOIN best_chris.transactions t
 ON s.sales_id = t.sales_id
